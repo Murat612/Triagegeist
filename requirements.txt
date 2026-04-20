@@ -1,0 +1,9 @@
+pandas>=2.0.0
+numpy
+scikit-learn
+lightgbm
+shap
+matplotlib
+seaborn
+torch
+transformers
