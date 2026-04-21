@@ -37,7 +37,13 @@ To rebuild this environment locally, simply use `pip`:
 pip install -r requirements.txt
 ```
 
-### 2. Generating Bio_ClinicalBERT Embeddings
+### 2. Download Competition Data
+Because competition datasets are large and protected, they are not hosted in this repository. 
+1. Go to the [Kaggle Triagegeist Data Page](https://www.kaggle.com/competitions/triagegeist/data)
+2. Download all `.csv` files (`train.csv`, `test.csv`, `chief_complaints.csv`, `patient_history.csv`)
+3. Place them directly into the root directory of this repository.
+
+### 3. Generating Bio_ClinicalBERT Embeddings
 To comply with processing limits (like Kaggle's 9-hour limit), semantic extraction is executed offline. Before running the main notebook, you must compile the embeddings from the raw input `chief_complaints.csv`.
 ```bash
 python extract_bert.py
