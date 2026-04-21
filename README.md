@@ -48,7 +48,7 @@ To comply with processing limits (like Kaggle's 9-hour limit), semantic extracti
 ```bash
 python extract_bert.py
 ```
-> **Note:** This will output `cc_bert_features.pkl` (~300MB). Keep it in the root directory.
+> **Note:** This will output `cc_bert_features.parquet` (~300MB). Keep it in the root directory.
 
 ### 3. Training & Evaluation
 Open the primary notebook to evaluate the entire system end-to-end:
